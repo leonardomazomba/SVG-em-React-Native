@@ -1,21 +1,22 @@
 # Utilizar imagens svg em React native e Expo
 
-Instale o expo de forma global com o comando:
+1. Instale o expo de forma global com o comando:
 ```bash
 npm install -g expo-cli
 ```
 
-1. Crie o seu projeto com o expo
+2. Crie o seu projeto com o expo
 ```bash
 expo init nome_projeto
 ```
 
-2.Instale a lib [react-native-svg](https://github.com/react-native-community/react-native-svg#installation)
+3. Instale a lib [react-native-svg](https://github.com/react-native-community/react-native-svg#installation)
 ```bash
 expo install react-native-svg
 ```
 
-# Convertendo o código da sua imagem SVG no formato para o React native
+## Convertendo o código da sua imagem SVG no formato para o React native
+
 1. Abrir sua imagem svg no navegador clique com o direito do mouse e vá na opção "Exibir o codigo fonte da página"
 
 2. Copiar o codigo fonte da imagem e colar 
@@ -24,14 +25,14 @@ expo install react-native-svg
 
 4. Colar o codigo da sua imagem no quadro SVG input
 
-Criar um componente no Expo - Exemplo: criei em src\Imagens\Icons\king.tsx //Nome da imagem
+5. Criar um componente - Exemplo: criei em src\Imagens\Icons\king.tsx //Nome da imagem
 
-Colar o codigo gerado no site https://react-svgr.com/playground/ no retorno do componente, 
+6. Colar o codigo gerado no site https://react-svgr.com/playground/ no retorno do componente, 
 Não se esqueça de importar da lib react-native-svg todos os objetos que estão sendo utilizados no svg, no meu exemplo importei a svg, {Path, Circle}
 
 Segue abaixo o componente de exemplo
 
-```bash
+```
 import React from 'react';
 import svg, { Path, Circle } from 'react-native-svg';
 
