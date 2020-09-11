@@ -32,7 +32,7 @@ Não se esqueça de importar da lib react-native-svg todos os objetos que estão
 
 Segue abaixo o componente de exemplo
 
-```
+```jsx
 import React from 'react';
 import svg, { Path, Circle } from 'react-native-svg';
 
