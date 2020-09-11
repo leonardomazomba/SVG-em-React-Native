@@ -103,3 +103,29 @@ const KingIcon: React.FC = () => {
 
 export default KingIcon;
 ```
+
+7. importar o novo componente no App.tsx
+
+```jsx
+import React from 'react';
+import { StatusBar, View, StyleSheet } from 'react-native';
+
+import KingIcon from './src/Imagens/Icons/king';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <StatusBar barStyle="dark-content" backgroundColor='transparent' translucent />
+      <KingIcon />      
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  }  
+});
+```
